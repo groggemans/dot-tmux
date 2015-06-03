@@ -23,13 +23,16 @@
 # Remove all key bindings
 unbind-key -a
 
+# Use ctrl-a as prefic
+set -g prefix C-a
+
 # Bind key to load custom config again
-bind g source ~/.tmux.conf
+bind R source ~/.tmux.conf
 
 ##############################################################################
 # Default bindings
 
-bind-key C-b send-prefix
+bind-key C-a send-prefix
 bind-key C-o rotate-window
 bind-key C-z suspend-client
 bind-key Space next-layout

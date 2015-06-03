@@ -31,9 +31,11 @@ bind -n C-F2 display-panes \; split-window -h
 bind -n S-F2 display-panes \; split-window -v
 bind -n C-S-F2 new-session
 
-# F3 window navigation
-bind-key -n F3 previous-window
-bind-key -n F4 next-window
+# F3/4 window navigation
+bind -n F3 previous-window
+bind -n F4 next-window
 
+# F5 refresh
+bind -n F5 source ~/.tmux.conf
 
 ##############################################################################
