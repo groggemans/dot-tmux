@@ -4,6 +4,7 @@ This is my tmux configuration.
 
 Feel free to use it as a starting point for your own tmux configuration!
 
+**You should have tmux version 1.9 or higher!**
 
 ## Install
 
@@ -12,13 +13,17 @@ Feel free to use it as a starting point for your own tmux configuration!
     ln -s ~/.tmux/tmux.conf ~/.tmux.conf
 ```
 
+**Attention:** The plugins will be installed automatically on the first start.
+This will take a long time!
+
+
 ## Maintain
 
 You can keep the plugins up-to-date by running the update command, `prefix` +
 `U`, on a regular basis.
 
 Small changes on the configuration can be made in the local config file.
--`~/.tmux.conf.local`
+- `~/.tmux.conf.local`
 
 
 ## Plugins
@@ -26,7 +31,7 @@ Small changes on the configuration can be made in the local config file.
 - tmux-plugins/tpm
 - tmux-plugins/tmux-resurrect
 - tmux-plugins/tmux-online-status
-- tmux-plugins/tmux-battery # Not used needs fix for ubuntu
+- tmux-plugins/tmux-battery  *#Not used needs a fix for ubuntu*
 - knakayama/tmux-mem
 - knakayama/tmux-uptime
 - knakayama/tmux-avg
@@ -42,7 +47,7 @@ Small changes on the configuration can be made in the local config file.
 
 #### General
 
-- `Alr-;` -> Command-prompt
+- `Alt-;` -> Command-prompt
 - `Prefix` + `:` -> Command-prompt
 - `Prefix` + `?` -> List of key mappings
 - `Prefix` + `R` -> Reload tmux configuration
@@ -65,7 +70,7 @@ Reload the configuration (`prefix` + `R`) to go back to the normal bindings.
 The movement is *vim aware*, if you use the
 [vim-tmux-navigator](https://github.com/christoomey/vim-tmux-navigator) plugin
 you can seamlessly transfer between vim splits and tmux panes whit the same
-key-bindings.
+key bindings.
 
 - `Ctrl-h` -> To left pane/split
 - `Ctrl-j` -> To bottom pane/split
