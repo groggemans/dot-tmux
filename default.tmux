@@ -106,5 +106,4 @@ bind-key -r C-Down resize-pane -D
 bind-key -r C-Left resize-pane -L
 bind-key -r C-Right resize-pane -R
 
-
 ##############################################################################
