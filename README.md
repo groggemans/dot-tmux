@@ -28,13 +28,13 @@ Small changes on the configuration can be made in the local config file.
 
 ## Plugins
 
-- tmux-plugins/tpm
-- tmux-plugins/tmux-resurrect
-- tmux-plugins/tmux-online-status
-- tmux-plugins/tmux-battery  *#Not used needs a fix for ubuntu*
-- knakayama/tmux-mem
-- knakayama/tmux-uptime
-- knakayama/tmux-avg
+- [tmux-plugins/tpm](https://github.com/tmux-plugins/tpm)
+- [tmux-plugins/tmux-resurrect](https://github.com/tmux-plugins/tmux-resurrect)
+- [tmux-plugins/tmux-online-status](https://github.com/tmux-plugins/tmux-online-status)
+- [tmux-plugins/tmux-battery](https://github.com/tmux-plugins/tmux-battery)
+- [knakayama/tmux-mem](https://github.com/knakayama/tmux-mem)
+- [knakayama/tmux-uptime](https://github.com/knakayama/tmux-uptime)
+- [knakayama/tmux-cpu](https://github.com/knakayama/tmux-cpu)
 
 
 ## Key bindings
