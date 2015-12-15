@@ -117,3 +117,12 @@ key bindings.
 - `Prefix` + `I` -> Install new plugins
 - `Prefix` + `U` -> Update installed plugins
 - `Alt-u` -> Clean-up pluggins
+
+
+## License
+MIT
+
+
+## Author
+By [G.Roggemans](https://github.com/groggemans)
+
