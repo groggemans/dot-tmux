@@ -4,7 +4,11 @@ This is my tmux configuration.
 
 Feel free to use it as a starting point for your own tmux configuration!
 
-**You should have tmux version 1.9 or higher!**
+Small changes on the configuration can be made in the local config file.
+- `~/.tmux.conf.local`
+
+## Requirements
+- tmux version 1.9 or higher
 
 ## Install
 This tmux config is available as [Ellipsis][Ellipsis] package. It is highly
@@ -22,15 +26,20 @@ also supported.
     ln -s ~/.tmux/tmux.conf ~/.tmux.conf
 ```
 
-**Attention:** The plugins will be installed automatically on the first start.
-This will take a long time!
+**Attention:** When using manual installation, the plugins will be installed
+automatically on the first start.  This will take a long time!
 
 ## Maintain
+To keep everything up-to-date;
+
+#### Ellipsis
+```shell
+    ellipsis pull tmux
+```
+
+#### Manual
 You can keep the plugins up-to-date by running the update command, `prefix` +
 `U`, on a regular basis.
-
-Small changes on the configuration can be made in the local config file.
-- `~/.tmux.conf.local`
 
 ## Plugins
 - [tmux-plugins/tpm][tpm]
