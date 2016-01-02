@@ -7,7 +7,16 @@ Feel free to use it as a starting point for your own tmux configuration!
 **You should have tmux version 1.9 or higher!**
 
 ## Install
+This tmux config is available as [Ellipsis][Ellipsis] package. It is highly
+recommended to use Ellipsis for installation, although manual installation is
+also supported.
 
+#### Ellipsis
+``` shell
+    ellipsis install groggemans/dot-tmux
+```
+
+#### Manual
 ```shell
     git clone https://github.com/groggemans/dot-tmux.git ~/.tmux
     ln -s ~/.tmux/tmux.conf ~/.tmux.conf
@@ -16,18 +25,14 @@ Feel free to use it as a starting point for your own tmux configuration!
 **Attention:** The plugins will be installed automatically on the first start.
 This will take a long time!
 
-
 ## Maintain
-
 You can keep the plugins up-to-date by running the update command, `prefix` +
 `U`, on a regular basis.
 
 Small changes on the configuration can be made in the local config file.
 - `~/.tmux.conf.local`
 
-
 ## Plugins
-
 - [tmux-plugins/tpm](https://github.com/tmux-plugins/tpm)
 - [tmux-plugins/tmux-resurrect](https://github.com/tmux-plugins/tmux-resurrect)
 - [tmux-plugins/tmux-online-status](https://github.com/tmux-plugins/tmux-online-status)
@@ -36,17 +41,12 @@ Small changes on the configuration can be made in the local config file.
 - [knakayama/tmux-uptime](https://github.com/knakayama/tmux-uptime)
 - [knakayama/tmux-cpu](https://github.com/knakayama/tmux-cpu)
 
-
 ## Key bindings
 
-
 #### Prefix
-
 - `Ctrl-a`
 
-
 #### General
-
 - `Alt-;` -> Command-prompt
 - `Prefix` + `:` -> Command-prompt
 - `Prefix` + `?` -> List of key mappings
@@ -55,9 +55,7 @@ Small changes on the configuration can be made in the local config file.
 - `Prefix` + `s` -> Suspend client
 - `Prefix` + `v` -> "Visual" mode (copy-mode)
 
-
 #### Dynamic key bindings
-
 Reload the configuration (`prefix` + `R`) to go back to the normal bindings.
 
 - `Prefix` + `b` -> Load byobu function key bindings
@@ -66,9 +64,8 @@ Reload the configuration (`prefix` + `R`) to go back to the normal bindings.
 
 
 #### Movement
-
 The movement is *vim aware*, if you use the
-[vim-tmux-navigator](https://github.com/christoomey/vim-tmux-navigator) plugin
+[vim-tmux-navigator][vim-tmux-navigator] plugin
 you can seamlessly transfer between vim splits and tmux panes whit the same
 key bindings.
 
@@ -77,14 +74,10 @@ key bindings.
 - `Ctrl-k` -> To top pane/split
 - `Ctrl-l` -> To right pane/split
 
-
 #### Session manipulation
-
 - `Ctrl-Shift-F2` -> New session
 
-
 #### Window manipulation
-
 - `Prefix` + `/` -> Search for window
 - `Prefix` + `t` -> Open new window
 - `Prefix` + `x` -> Close current window
@@ -101,9 +94,7 @@ key bindings.
 - `Prefix` + `8` -> Go to window '8'
 - `Prefix` + `9` -> Go to window '9'
 
-
 #### Pane manipulation
-
 - `Ctrl-F2` -> New pane (vertical split)
 - `Shift-F2` -> New pane (horizontal split)
 - `Prefix` + `H` -> Resize pane to the left
@@ -111,18 +102,19 @@ key bindings.
 - `Prefix` + `K` -> Resize pane to the top
 - `Prefix` + `L` -> Resize pane to the right
 
-
 #### Plugins
-
 - `Prefix` + `I` -> Install new plugins
 - `Prefix` + `U` -> Update installed plugins
 - `Alt-u` -> Clean-up pluggins
 
+## Author
+By [G. Roggemans][groggemans]
 
 ## License
 MIT
 
+[Ellipsis]:             https://github.com/ellipsis/ellipsis
 
-## Author
-By [G.Roggemans](https://github.com/groggemans)
+[vim-tmux-navigator]:   https://github.com/christoomey/vim-tmux-navigator
 
+[groggemans]:           https://github.com/groggemans
