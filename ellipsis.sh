@@ -24,6 +24,9 @@ pkg.install() {
     git.clone https://github.com/tmux-plugins/tpm
     ~/.tmux/plugins/tpm/tpm
     ~/.tmux/plugins/tpm/scripts/install_plugins.sh
+
+    # (Re)Load tmux conf
+    tmux source-file ~/.tmux.conf
 }
 
 ##############################################################################
