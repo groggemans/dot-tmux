@@ -33,13 +33,12 @@ Small changes on the configuration can be made in the local config file.
 - `~/.tmux.conf.local`
 
 ## Plugins
-- [tmux-plugins/tpm](https://github.com/tmux-plugins/tpm)
-- [tmux-plugins/tmux-resurrect](https://github.com/tmux-plugins/tmux-resurrect)
-- [tmux-plugins/tmux-online-status](https://github.com/tmux-plugins/tmux-online-status)
-- [tmux-plugins/tmux-battery](https://github.com/tmux-plugins/tmux-battery)
-- [knakayama/tmux-mem](https://github.com/knakayama/tmux-mem)
-- [knakayama/tmux-uptime](https://github.com/knakayama/tmux-uptime)
-- [knakayama/tmux-cpu](https://github.com/knakayama/tmux-cpu)
+- [tmux-plugins/tpm][tpm]
+- [tmux-plugins/tmux-resurrect][tmux-resurrect]
+- [tmux-plugins/tmux-online-status][tmux-online-status]
+- [GROG/tmux-plugin-cpu][tmux-plugin-cpu]
+- [GROG/tmux-plugin-mem][tmux-plugin-mem]
+- [GROG/tmux-plugin-battery][tmux-plugin-battery]
 
 ## Key bindings
 
@@ -115,6 +114,12 @@ MIT
 
 [Ellipsis]:             https://github.com/ellipsis/ellipsis
 
+[tpm]:                  https://github.com/tmux-plugins/tpm
+[tmux-resurrect]:       https://github.com/tmux-plugins/tmux-resurrect
+[tmux-online-status]:   https://github.com/tmux-plugins/tmux-online-status
+[tmux-plugin-cpu]:      https://github.com/GROG/tmux-plugin-cpu
+[tmux-plugin-mem]:      https://github.com/GROG/tmux-plugin-mem
+[tmux-plugin-battery]:  https://github.com/GROG/tmux-plugin-battery
 [vim-tmux-navigator]:   https://github.com/christoomey/vim-tmux-navigator
 
 [groggemans]:           https://github.com/groggemans
