@@ -22,8 +22,8 @@ pkg.install() {
     mkdir -p ~/.tmux/plugins
     cd ~/.tmux/plugins
     git.clone https://github.com/tmux-plugins/tpm
-    exec ~/.tmux/plugins/tpm/tpm
-    exec ~/.tmux/plugins/tpm/scripts/install_plugins.sh
+    ~/.tmux/plugins/tpm/tpm
+    ~/.tmux/plugins/tpm/scripts/install_plugins.sh
 }
 
 ##############################################################################
@@ -33,10 +33,13 @@ pkg.install() {
     git.pull
 
     # Update plugins
-    exec ~/.tmux/plugins/tpm/tpm
-    exec ~/.tmux/plugins/tpm/scripts/clean_plugins.sh
-    exec ~/.tmux/plugins/tpm/scripts/install_plugins.sh
-    exec ~/.tmux/plugins/tpm/scripts/update_plugin.sh
+    ~/.tmux/plugins/tpm/tpm
+    ~/.tmux/plugins/tpm/scripts/clean_plugins.sh
+    ~/.tmux/plugins/tpm/scripts/install_plugins.sh
+    ~/.tmux/plugins/tpm/scripts/update_plugin.sh --shell-out all
+
+    # Reload tmux conf
+    tmux source-file ~/.tmux.conf
  }
 
 ##############################################################################
