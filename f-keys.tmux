@@ -13,8 +13,8 @@ bind f source ~/.tmux/f-keys.tmux.disable
 
 # F2 window/pane creation
 bind -n F2 new-window
-bind -n C-F2 display-panes \; split-window -h
-bind -n S-F2 display-panes \; split-window -v
+bind -n C-F2 display-panes \; split-window -h -c "#{pane_current_path}"
+bind -n S-F2 display-panes \; split-window -v -c "#{pane_current_path}"
 bind -n C-S-F2 new-session
 
 # F3/4 window navigation
@@ -23,5 +23,16 @@ bind -n F4 next-window
 
 # F5 refresh
 bind -n F5 source ~/.tmux.conf
+
+# F9 session selection
+bind -n F9 choose-window
+bind -n S-F9 choose-session
+
+# F10 renaming
+bind -n F10 command-prompt -p "(rename-window) " "rename-window '%%'"
+bind -n S-F10 command-prompt -p "(rename-session) " "rename-session '%%'"
+
+# F11 "full-screen" (togle status bar)
+bind -n F11 set-option -g status
 
 ##############################################################################

@@ -55,11 +55,12 @@ You can keep the plugins up-to-date by running the update command, `prefix` +
 - `Ctrl-a`
 
 #### General
+- `F5` -> Reload tmux configuration
+- `F11` -> Toggle status bar
 - `Alt-;` -> Command-prompt
 - `Prefix` + `:` -> Command-prompt
 - `Prefix` + `?` -> List of key mappings
 - `Prefix` + `R` -> Reload tmux configuration
-- `F5` -> Reload tmux configuration
 - `Prefix` + `s` -> Suspend client
 - `Prefix` + `v` -> "Visual" mode (copy-mode)
 
@@ -83,6 +84,8 @@ key bindings.
 - `Ctrl-l` -> To right pane/split
 
 #### Session manipulation
+- `Shift-F9` -> Select session
+- `Shift-F10` -> Rename session
 - `Ctrl-Shift-F2` -> New session
 
 #### Window manipulation
@@ -92,6 +95,8 @@ key bindings.
 - `F2` -> Open new window
 - `F3` -> Go to previous window
 - `F4` -> Go to next window
+- `F9` -> Select session
+- `F10` -> Rename window
 - `Prefix` + `1` -> Go to window '1'
 - `Prefix` + `2` -> Go to window '2'
 - `Prefix` + `3` -> Go to window '3'
