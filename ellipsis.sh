@@ -18,15 +18,11 @@ pkg.link() {
 ##############################################################################
 
 pkg.install() {
-    # Install TPM
-    mkdir -p ~/.tmux/plugins
-    cd ~/.tmux/plugins
-    git.clone https://github.com/tmux-plugins/tpm
-    ~/.tmux/plugins/tpm/tpm
-    ~/.tmux/plugins/tpm/scripts/install_plugins.sh
+    # Install EllipsisTPM
+    ellipsis install https://github.com/groggemans/ellipsis-tpm
 
-    # (Re)Load tmux conf
-    tmux source-file ~/.tmux.conf
+    # Install plugins
+    ellipsis-tpm install
 }
 
 ##############################################################################
@@ -35,14 +31,9 @@ pkg.install() {
     # Update dot-tmux repo
     git.pull
 
-    # Update plugins
-    ~/.tmux/plugins/tpm/tpm
-    ~/.tmux/plugins/tpm/scripts/clean_plugins.sh
-    ~/.tmux/plugins/tpm/scripts/install_plugins.sh
-    ~/.tmux/plugins/tpm/scripts/update_plugin.sh --shell-out all
-
-    # Reload tmux conf
-    tmux source-file ~/.tmux.conf
+    # Clean and update plugins
+    ellipsis-tpm clean
+    ellipsis-tpm upate
  }
 
 ##############################################################################
