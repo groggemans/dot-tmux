@@ -33,7 +33,7 @@ pkg.install() {
 
     # Clean and update plugins
     ellipsis-tpm clean
-    ellipsis-tpm upate
+    ellipsis-tpm update
  }
 
 ##############################################################################
