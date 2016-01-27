@@ -24,4 +24,15 @@ unbind -n F4
 # F5 refresh
 unbind -n F5
 
+# F9 session selection
+unbind -n F9
+unbind -n S-F9
+
+# F10 renaming
+unbind -n F10
+unbind -n S-F10
+
+# F11 "full-screen" (togle status bar)
+unbind -n F11
+
 ##############################################################################
