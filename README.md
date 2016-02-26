@@ -7,42 +7,21 @@ Feel free to use it as a starting point for your own tmux configuration!
 Small changes on the configuration can be made in the local config file.
 - `~/.tmux.conf.local`
 
-## Requirements
-- tmux version 1.9 or higher
-
 ## Install
-This tmux config is available as [Ellipsis][Ellipsis] package. It is highly
-recommended to use Ellipsis for installation, although manual installation is
-also supported.
+**Requirements:** [Ellipsis][ellipsis]
 
-#### Ellipsis
 ``` shell
     ellipsis install groggemans/dot-tmux
 ```
 
-#### Manual
-```shell
-    git clone https://github.com/groggemans/dot-tmux.git ~/.tmux
-    ln -s ~/.tmux/tmux.conf ~/.tmux.conf
-```
-
-**Attention:** When using manual installation, the plugins will be installed
-automatically on the first start.  This will take a long time!
-
 ## Maintain
 To keep everything up-to-date;
 
-#### Ellipsis
 ```shell
-    ellipsis pull tmux
+    ellipsis update tmux
 ```
 
-#### Manual
-You can keep the plugins up-to-date by running the update command, `prefix` +
-`U`, on a regular basis.
-
 ## Plugins
-- [tmux-plugins/tpm][tpm]
 - [tmux-plugins/tmux-resurrect][tmux-resurrect]
 - [tmux-plugins/tmux-online-status][tmux-online-status]
 - [GROG/tmux-plugin-cpu][tmux-plugin-cpu]
