@@ -5,7 +5,7 @@ This is my tmux configuration.
 Feel free to use it as a starting point for your own tmux configuration!
 
 Small changes on the configuration can be made in the local config file.
-- `~/.tmux.conf.local`
+- `~/.local/tmux/tmux.conf`
 
 ## Install
 **Requirements:** [Ellipsis][ellipsis]
