@@ -18,8 +18,8 @@ pkg.link() {
 ##############################################################################
 
 pkg.install() {
-    # Install EllipsisTPM
-    ellipsis install https://github.com/groggemans/ellipsis-tpm
+    # Install Ellipsis-TPM if not already installed
+    ellipsis install ellipsis-tpm
 
     # Install plugins
     ellipsis-tpm install
