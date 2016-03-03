@@ -12,7 +12,7 @@ pkg.link() {
     fs.link_file tmux.conf
 
     # Link package into ~/.tmux
-    fs.link_file $PKG_PATH
+    fs.link_file "$PKG_PATH"
 }
 
 ##############################################################################
