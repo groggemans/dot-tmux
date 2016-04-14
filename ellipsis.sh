@@ -14,7 +14,7 @@ pkg.install() {
     fi
 
     # Install plugins
-    ellipsis-tpm install
+    TPM_CONF="$PKG_PATH/tmux.conf" ellipsis-tpm install
 }
 
 ##############################################################################
