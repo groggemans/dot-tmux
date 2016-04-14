@@ -9,7 +9,7 @@
 
 pkg.install() {
     # Install Ellipsis-TPM if not already installed
-    if [ ! utils.cmd_exists "ellipsis-tpm" ]; then
+    if ! utils.cmd_exists ellipsis-tpm; then
         ellipsis install ellipsis-tpm
     fi
 
