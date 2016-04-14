@@ -7,22 +7,23 @@
 # @license MIT
 ##############################################################################
 
+pkg.install() {
+    # Install Ellipsis-TPM if not already installed
+    if [ ! utils.cmd_exists "ellipsis-tpm" ]; then
+        ellipsis install ellipsis-tpm
+    fi
+
+    # Install plugins
+    ellipsis-tpm install
+}
+
+##############################################################################
 pkg.link() {
     # Link tmux.conf
     fs.link_file tmux.conf
 
     # Link package into ~/.tmux
     fs.link_file "$PKG_PATH"
-}
-
-##############################################################################
-
-pkg.install() {
-    # Install Ellipsis-TPM if not already installed
-    ellipsis install ellipsis-tpm
-
-    # Install plugins
-    ellipsis-tpm install
 }
 
 ##############################################################################
