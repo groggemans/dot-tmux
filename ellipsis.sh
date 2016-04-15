@@ -14,7 +14,8 @@ pkg.install() {
     fi
 
     # Install plugins
-    TPM_CONF="$PKG_PATH/tmux.conf" ellipsis-tpm install
+    TPM_CONF="$PKG_PATH/tmux.conf" TPM_PLUGIN_PATH="$PKG_PATH/plugins"\
+        ellipsis-tpm install
 }
 
 ##############################################################################
@@ -33,8 +34,10 @@ pkg.link() {
     git.pull
 
     # Clean and update plugins
-    ellipsis-tpm clean
-    ellipsis-tpm update
+    TPM_CONF="$PKG_PATH/tmux.conf" TPM_PLUGIN_PATH="$PKG_PATH/plugins"\
+        ellipsis-tpm clean
+    TPM_CONF="$PKG_PATH/tmux.conf" TPM_PLUGIN_PATH="$PKG_PATH/plugins"\
+        ellipsis-tpm update
  }
 
 ##############################################################################
