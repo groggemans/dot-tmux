@@ -13,6 +13,7 @@ Small changes on the configuration can be made in the local config file.
 ``` shell
     ellipsis install groggemans/dot-tmux
 ```
+*([Ellipsis-TPM][ellipsis-tpm] will also be installed if needed)*
 
 ## Maintain
 To keep everything up-to-date;
@@ -105,9 +106,9 @@ By [G. Roggemans][groggemans]
 ## License
 MIT
 
-[Ellipsis]:             https://github.com/ellipsis/ellipsis
+[ellipsis]:             https://github.com/ellipsis/ellipsis
+[ellipsis-tpm]:         https://github.com/ellipsis/ellipsis-tpm
 
-[tpm]:                  https://github.com/tmux-plugins/tpm
 [tmux-resurrect]:       https://github.com/tmux-plugins/tmux-resurrect
 [tmux-online-status]:   https://github.com/tmux-plugins/tmux-online-status
 [tmux-plugin-cpu]:      https://github.com/GROG/tmux-plugin-cpu
