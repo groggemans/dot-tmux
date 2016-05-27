@@ -23,8 +23,9 @@ pkg.link() {
     # Link tmux.conf
     fs.link_file tmux.conf
 
-    # Link package into ~/.tmux
-    fs.link_file "$PKG_PATH"
+    # Link package into ~/.config/tmux
+    mkdir -p "$ELLIPSIS_HOME/.config"
+    fs.link_file "$PKG_PATH" "$ELLIPSIS_HOME/.config/tmux"
 }
 
 ##############################################################################
@@ -39,5 +40,16 @@ pkg.link() {
     TPM_CONF="$PKG_PATH/tmux.conf" TPM_PLUGIN_PATH="$PKG_PATH/plugins"\
         ellipsis-tpm update
  }
+
+##############################################################################
+
+# Unlink package
+pkg.unlink() {
+    # Remove config dir
+    rm "$ELLIPSIS_HOME/.config/tmux"
+
+    # Remove all links in the home folder
+    hooks.unlink
+}
 
 ##############################################################################
