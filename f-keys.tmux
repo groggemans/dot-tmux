@@ -7,7 +7,7 @@
 ##############################################################################
 
 # Disable function key bindings
-bind f source ~/.tmux/f-keys.tmux.disable
+bind f source "$HOME/.config/tmux/f-keys.tmux.disable"
 
 ##############################################################################
 
@@ -22,7 +22,7 @@ bind -n F3 previous-window
 bind -n F4 next-window
 
 # F5 refresh
-bind -n F5 source ~/.tmux.conf
+bind -n F5 source "$HOME/.tmux.conf"
 
 # F9 session selection
 bind -n F9 choose-window
@@ -36,3 +36,4 @@ bind -n S-F10 command-prompt -p "(rename-session) " "rename-session '%%'"
 bind -n F11 set-option -g status
 
 ##############################################################################
+# vim: ft=tmux
