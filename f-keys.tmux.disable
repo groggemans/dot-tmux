@@ -7,7 +7,7 @@
 ##############################################################################
 
 # Enable function key bindings
-bind f source ~/.tmux/f-keys.tmux
+bind f source "$HOME/.config/tmux/f-keys.tmux"
 
 ##############################################################################
 
