@@ -8,19 +8,13 @@ Small changes on the configuration can be made in the local config file.
 - `~/.local/tmux/tmux.conf`
 
 ## Install
-**Requirements:** [Ellipsis][ellipsis]
+**Requirements:** [Ellipsis][ellipsis] `(>=v1.9.0)`,
+[ellipsis-tpm][ellipsis-tpm]
 
 ``` shell
-    ellipsis install groggemans/dot-tmux
+$ ellipsis install groggemans/dot-tmux
 ```
 *([Ellipsis-TPM][ellipsis-tpm] will also be installed if needed)*
-
-## Maintain
-To keep everything up-to-date;
-
-```shell
-    ellipsis update tmux
-```
 
 ## Plugins
 - [tmux-plugins/tmux-resurrect][tmux-resurrect]

@@ -1,4 +1,3 @@
-#!/usr/bin/env bash
 ##############################################################################
 # @file ellipsis.sh
 # @date January, 2016
@@ -7,9 +6,17 @@
 # @license MIT
 ##############################################################################
 
+# Minimal ellipsis version
+ELLIPSIS_VERSION_DEP='1.9.0'
+
+# Package dependencies (informational/not used!)
+ELLIPSIS_PKG_DEPS='ellipsis/ellipsis-tpm'
+
+##############################################################################
+
 pkg.install() {
     # Install Ellipsis-TPM if not already installed
-    if ! utils.cmd_exists ellipsis-tpm; then
+    if ! ellipsis.list_packages | grep "$ELLIPSIS_PACKAGES/ellipsis-tpm"; then
         ellipsis install ellipsis-tpm
     fi
 
@@ -19,6 +26,7 @@ pkg.install() {
 }
 
 ##############################################################################
+
 pkg.link() {
     # Link tmux.conf
     fs.link_file tmux.conf
@@ -43,13 +51,18 @@ pkg.link() {
 
 ##############################################################################
 
-# Unlink package
 pkg.unlink() {
     # Remove config dir
     rm "$ELLIPSIS_HOME/.config/tmux"
 
     # Remove all links in the home folder
     hooks.unlink
+}
+
+##############################################################################
+
+pkg.uninstall() {
+    : # No action
 }
 
 ##############################################################################
