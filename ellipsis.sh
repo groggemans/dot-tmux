@@ -16,7 +16,8 @@ ELLIPSIS_PKG_DEPS='ellipsis/ellipsis-tpm'
 
 pkg.install() {
     # Install Ellipsis-TPM if not already installed
-    if ! ellipsis.list_packages | grep "$ELLIPSIS_PACKAGES/ellipsis-tpm"; then
+    ellipsis.list_packages | grep "$ELLIPSIS_PACKAGES/ellipsis-tpm" 2>&1 > /dev/null
+    if [ $? -ne 0 ]; then
         ellipsis install ellipsis-tpm
     fi
 
