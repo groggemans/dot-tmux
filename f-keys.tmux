@@ -33,7 +33,7 @@ bind -n F10 command-prompt -p "(rename-window) " "rename-window '%%'"
 bind -n S-F10 command-prompt -p "(rename-session) " "rename-session '%%'"
 
 # F11 "full-screen" (togle status bar)
-bind -n F11 set-option -g status
+bind -n S-F11 set-option -g status
 
 ##############################################################################
 # vim: ft=tmux
