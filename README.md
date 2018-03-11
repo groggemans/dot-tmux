@@ -71,15 +71,15 @@ key bindings.
 - `F4` -> Go to next window
 - `F9` -> Select session
 - `F10` -> Rename window
-- `Prefix` + `1` -> Go to window '1'
-- `Prefix` + `2` -> Go to window '2'
-- `Prefix` + `3` -> Go to window '3'
-- `Prefix` + `4` -> Go to window '4'
-- `Prefix` + `5` -> Go to window '5'
-- `Prefix` + `6` -> Go to window '6'
-- `Prefix` + `7` -> Go to window '7'
-- `Prefix` + `8` -> Go to window '8'
-- `Prefix` + `9` -> Go to window '9'
+- `Alt-1` -> Go to window '1'
+- `Alt-2` -> Go to window '2'
+- `Alt-3` -> Go to window '3'
+- `Alt-4` -> Go to window '4'
+- `Alt-5` -> Go to window '5'
+- `Alt-6` -> Go to window '6'
+- `Alt-7` -> Go to window '7'
+- `Alt-8` -> Go to window '8'
+- `Alt-9` -> Go to window '9'
 
 #### Pane manipulation
 - `Ctrl-F2` -> New pane (vertical split)
